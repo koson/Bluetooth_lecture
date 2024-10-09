@@ -61,6 +61,38 @@ TX Output Power| - Class 1: 20 dBm Max. (0.1W) – 100m <br> - Class 2: 4 dBm (2
 
 ![alt text](image.png)
 
+
+## Piconet
+- Piconet ประกอบด้วยอุปกรณ์ที่ทำหน้าที่ master หนึ่งตัวและ slave จำนวนหนึ่ง
+    -  slave ที่ทำงานอยู่พร้อมกันสูงสุด 7 ตัว 
+    -  slave สามารถส่งข้อมูลได้เฉพาะเมื่อมาสเตอร์ร้องขอเท่านั้น
+    -  slave เข้าร่วมกลุ่มได้สูงสุด 255 ตัว (เรียกว่า parked station)
+- slave ที่ทำงานอยู่จะถูก poll (วนเรียก) โดย master เพื่อส่งข้อมูล
+- แต่ละอุปกรณ์จะได้รับ parked address  ชนาด 8 บิต  (ทำให้ piconet มี slave ได้เต็มที่ 255 ตัว)
+- parked station สามารถเข้าร่วมได้ภายในเวลา 2us
+- station อื่นสามารถเข้าร่วมได้ในภายหลัง
+
+piconet มีรูปแบบเป็นเครือข่ายแบบกระจาย (Scatter net) อุปกรณ์หนึ่ง ๆ สามารถเข้าร่วมใน piconet หลายเครือข่าย
+
+```{dot}
+graph G {
+  layout=neato
+  run -- intr;
+  intr -- runbl;
+  runbl -- run;
+  run -- kernel;
+  kernel -- zombie;
+  kernel -- sleep;
+  kernel -- runmem;
+  sleep -- swap;
+  swap -- runswap;
+  runswap -- new;
+  runswap -- runmem;
+  new -- runmem;
+  sleep -- runmem;
+}
+```
+
 ### references: 
   - https://grouper.ieee.org/groups/802/15/index.html
   - https://www.cse.wustl.edu/~jain/cse574-20/
