@@ -1,7 +1,7 @@
 # Bluetooth Smart
 ## Bluetooth Smart
 
-![alt text](image-8.png)
+![alt text](./Pictures/image-8.png)
 
 ## คุณสมบัติ
 
@@ -24,7 +24,7 @@
 - สำรองไว้ 3 ช่องสำหรับ advertising และอีก 37 ช่องไว้สำหรับ data
 - ช่อง Advertising จะถูกคัดเลือกอัตโนมัติ เพื่อไม่ให้รบกวนกับช่องสัญญาณ Wi-Fi
 
-![alt text](image-9.png)
+![alt text](./Pictures/image-9.png)
 
 ## Bluetooth Smart MAC
 
@@ -36,7 +36,7 @@
 - General Advertising: การเผยแพร่ที่ต้องการเชื่อมต่ออุปกรณ์ส่วนกลางอาจขอการเชื่อมต่อสั้นๆ
 - Directed Advertising: ส่งข้อมูลที่ลงนามไปยังอุปกรณ์หลักที่เชื่อมต่อไว้ก่อนหน้านี้
 
-![alt text](image-10.png)
+![alt text](./Pictures/image-10.png)
 
 - หลังจากเชื่อมต่อแล้ว master จะแจ้ง slave เกี่ยวกับลำดับการ hopping และ
 wake up cycle
@@ -50,16 +50,16 @@ wake up cycle
 
 ### Advertising Channel
 
-![alt text](image-11.png)
+![alt text](./Pictures/image-11.png)
 
 ### Data Channels
 
-![alt text](image-12.png)
+![alt text](./Pictures/image-12.png)
 
 
 ## Bluetooth Smart Protocol Stack
 
-![alt text](image-13.png)
+![alt text](./Pictures/image-13.png)
 
 
 

@@ -1,7 +1,7 @@
 # Bluetooth Packet Format
 ## รูปแบบ packet ของ Bluetooth
 
-![alt text](image-1.png)
+![alt text](./Pictures/image-1.png)
 
 - แพ็คเก็ตสามารถมีความยาวได้ถึง 5 ช่อง 
   - 5 ช่อง = 3125 บิต
@@ -19,7 +19,7 @@
 
 ## States การทำงานของ Bluetooth
 
-![alt text](image-2.png)
+![alt text](./Pictures/image-2.png)
 
 สถานะ | รายละเอียด
 -|-

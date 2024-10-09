@@ -59,7 +59,7 @@ Radio Frequency hopping| 1600 times/s ⇒ 625 us/hop
 Security| Challenge/Response Authentication. 128b Encryption
 TX Output Power| - Class 1: 20 dBm Max. (0.1W) – 100m <br> - Class 2: 4 dBm (2.5 mW)<br> - Class 3: 0 dBm (1mW) – 10m
 
-![alt text](image.png)
+![alt text](./Pictures/image.png)
 
 
 ## Piconet

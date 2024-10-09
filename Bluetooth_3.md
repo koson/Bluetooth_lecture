@@ -1,12 +1,12 @@
 # Bluetooth Protocol Stack
 ## Bluetooth Protocol Stack
 
-![alt text](image-4.png)
+![alt text](./Pictures/image-4.png)
 
 ### RF layer
 ภาครับส่งสัญญาณวิทยุของ Bluetooth เข้ารหัสแบบ Frequency hopping Gaussian Frequency Shift Keying (GFSK) modulation
 
-![alt text](image-5.png)
+![alt text](./Pictures/image-5.png)
 
 ### Baseband layer
 - ทำหน้าที่ Frequency hop selection, connection, MAC
@@ -16,7 +16,7 @@
   - address ด้านบน (UAP) – 8 บิต
   - address ไม่สำคัญ (NAP) – 16 บิต
 
-![alt text](image-6.png)
+![alt text](./Pictures/image-6.png)
 
 - UAP+NAP = ตัวระบุเฉพาะขององค์กร (OUI) จาก IEEE
 - LAP ใช้ในการระบุ piconet และการทำงานอื่นๆ
