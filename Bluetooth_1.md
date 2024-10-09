@@ -74,23 +74,17 @@ TX Output Power| - Class 1: 20 dBm Max. (0.1W) – 100m <br> - Class 2: 4 dBm (2
 
 piconet มีรูปแบบเป็นเครือข่ายแบบกระจาย (Scatter net) อุปกรณ์หนึ่ง ๆ สามารถเข้าร่วมใน piconet หลายเครือข่าย
 
-```{dot}
-graph G {
-  layout=neato
-  run -- intr;
-  intr -- runbl;
-  runbl -- run;
-  run -- kernel;
-  kernel -- zombie;
-  kernel -- sleep;
-  kernel -- runmem;
-  sleep -- swap;
-  swap -- runswap;
-  runswap -- new;
-  runswap -- runmem;
-  new -- runmem;
-  sleep -- runmem;
-}
+```mermaid
+flowchart LR
+    A((slave1)) <---> B(master1)
+    B <---> C((slave2)) 
+    B <---> D((slave3))
+    C <---> F(master2)
+    F <---> G((slave4))
+    H((slave5)) <---> F
+    F <---> E((slave6))
+
+
 ```
 
 ### references: 
