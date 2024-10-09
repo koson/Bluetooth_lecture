@@ -83,8 +83,6 @@ flowchart LR
     F <---> G((slave4))
     H((slave5)) <---> F
     F <---> E((slave6))
-
-
 ```
 
 ### references: 
