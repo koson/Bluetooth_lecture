@@ -1,0 +1,5 @@
+# การทดลอง ESP32 Bluetooth 
+## 1. BT_DISCOVERY
+## 2. BT_SPP_ACCEPTOR
+## 3. BT_HID_MOUSE_DEVICE
+ 
